@@ -1,0 +1,30 @@
+.line_footer{
+    width: 15%;
+    border: 1px solid #848484;
+}
+.contact{
+    color: #848484;
+
+}
+.contact_footer{
+    width:2%;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+.col_social{
+    width: 5.333333%;
+}
+.contact_icon {
+    object-fit: contain;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact_icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  
+  

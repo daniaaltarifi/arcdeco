@@ -1,0 +1,48 @@
+.desc_cases{
+    color: #c3c3c3;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.slick-prev, .slick-next {
+    visibility: hidden;
+}
+
+.slider_image_container {
+    width: 1920px;
+    max-width: 1920px;
+    height: 600px;
+    display: block;
+    overflow: hidden;
+  } 
+  
+  .slider_img {
+    width: 98%;
+    height: 600px;
+    display: block;
+    object-fit:cover;
+
+  }
+
+   @media screen and  (min-width: 1440px) {
+  .slider_img{
+    width: 100%;
+  }
+  } 
+
+  .slider_image_container:hover{
+    cursor: url('../images/cursor.png'), auto;
+
+  }
+.progress-bar {
+    height: 2px; /* Adjust the height as needed */
+    background-color: #474749; /* Set the color of the progress bar */
+    position: relative;
+  }
+  
+  .progress-bar div {
+    height: 100%;
+    background-color: #fff; /* Match the progress bar color */
+    transition: width 0.3s; /* Add a smooth transition effect */
+  }
+  
+ 

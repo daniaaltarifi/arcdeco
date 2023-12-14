@@ -1,0 +1,206 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #19191b;
+}
+
+.video_play {
+    object-fit:fill;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.img_home{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    /* object-position: center center */
+
+}
+.text_title {
+    position: absolute;
+    margin: 0;
+    line-height: 90px;
+    text-align: left;
+    animation: example2 2s ease-out;
+
+}
+
+@keyframes example2 {
+    0% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+.title_video {
+    height: 180px;
+    overflow: hidden;
+    position: absolute;
+    width: 40%;
+    top: 35%;
+    left:100px;
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+@keyframes fadeUpTitleVideo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        /* transform: skew(-20deg); */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* transform: skew(-20deg); */
+    }
+}
+
+@keyframes fadeUpSubTitleVideo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        transform: skew(-20deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transform: skew(-20deg);
+    }
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.12);
+    /* Adjust the opacity here */
+    pointer-events: none;
+    /* Allows clicking through the overlay to the video */
+}
+
+.box_intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Position it to the left to make it full width */
+    width: 200%;
+    /* Make it double the width to ensure it covers the skewed area */
+    height: 100%;
+    background-color: #19191b;
+    /* Use the same background color */
+    transform: skew(0deg);
+    /* Apply the inverse skew to match the .box_intro skew */
+    z-index: -1;
+    /* Place it behind .box_intro */
+}
+
+.box_intro {
+    background-color: #19191b;
+    position: absolute;
+    z-index: 1;
+    bottom: -1px;
+    width: 40%;
+    left: 45px;
+    height: 33.5%;
+    transform: skew(20deg);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subtitle {
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: skew(-20deg);
+    margin-left: 4%;
+    animation: fadeUpSubTitleVideo 2s ease both;
+
+}
+
+.paragraph_intro {
+    color: #c3c3c3;
+    text-align: left;
+    font-size: 1rem;
+    transform: skew(-20deg);
+    animation: fadeUpSubTitleVideo 2s ease both;
+
+}
+@media screen and  (min-width: 1440px) {
+    .title_video{
+        font-size: 6vw;
+        height: 250px;
+    }
+    .text_title{
+        line-height: 120px;
+    }
+    .subtitle{
+        font-size: 2.5rem;
+        margin-left: 3%;
+    }
+    .paragraph_intro{
+        font-size: 1.9rem;
+    }
+}
+.contact_video {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    bottom: 10%;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.whiteSpace {
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width:768px) {
+
+    .title_video {
+        font-size: 50px;
+        top: 50px;
+        width: 100%;
+        left: 0;
+    }
+    .box_intro {
+        display: none;
+    }
+
+    .contact_video {
+        width: 40%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:576px) {
+    .video_play{
+        width: 110%;
+    }
+    .video-overlay{
+        width:110%;
+    }
+}

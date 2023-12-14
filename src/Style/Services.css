@@ -1,0 +1,64 @@
+
+/* 
+.image_services {
+    height:600px;
+    width: 200px;
+} */
+.title_services{
+    font-weight: bold;
+    color: #fff;
+    font-size: 5vh;
+}
+.subtitle_services{
+    color: #fff;
+    font-size: 2.5vh;
+}
+.card_services {
+    border: none;
+    background-color: #19191b;
+  }
+  .service_img{
+    opacity: 0.6;
+    object-fit: cover;
+    /* width: 500px; */
+    height: 100vh;
+  }
+  /* .img_services{
+    border-radius: 8x;
+  } */
+/* The Image container */
+.img-hover-zoom--slowmo {
+    overflow: hidden;
+}
+
+/* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+    transition: transform 0.5s, filter 3s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+    transform: scale(1.1);
+}
+
+.vertical-text {
+  writing-mode:vertical-rl; /* Displays text vertically from bottom to top */
+  text-orientation: mixed; /* Specifies vertical text orientation */
+}
+
+.vertical-text span {
+  display: inline-block;
+  margin-left: 10px; /* Adjust the margin between vertical texts */
+  margin-top: 115%;
+  color: #434344;
+  font-size: 1.1rem;
+}
+
+    
+@media (max-width: 768px) {
+    /* Adjust positioning and size for smaller screens */
+    .cont_desc_of_img {
+      top: 30%;
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  }
