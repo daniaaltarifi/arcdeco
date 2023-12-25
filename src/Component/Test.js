@@ -17,7 +17,6 @@ function Test() {
 
   return (
     <div>
-    
     <div className="one-time">
       <Slider {...settings} >
         <div>

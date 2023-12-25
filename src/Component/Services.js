@@ -45,7 +45,6 @@ function Services() {
               </span>
             </div>
       <div className="container">
-
         {add.map((data) => (
 
           <div key={data.id}>
